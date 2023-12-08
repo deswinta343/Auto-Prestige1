@@ -1,206 +1,82 @@
+/* header styles */
+.header {
+  background-color: #fff; /* Set your desired background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for a subtle effect */
+}
+
+/* header top styles */
 .header__top {
-  padding: 10px 0px;
-  background: gray;
-  color: #fff;
+  padding: 10px 0;
 }
 
 .header__top__left {
-  display: flex;
-  align-items: center;
-  column-gap: 1rem;
+  /* Add styles for the left side of the top header */
 }
 
-.header__top__left span {
-  font-size: 0.9rem;
+.header__top__right {
+  /* Add styles for the right side of the top header */
 }
 
 .header__top__help {
-  display: flex;
-  align-items: center;
-  column-gap: 0.4rem;
+  /* Add styles for the help section, if needed */
 }
 
-.header__top__help i {
-  background: #fff;
-  color: gray;
-  padding: 2px 4px;
-  border-radius: 50px;
-  font-size: 0.7rem;
-}
-
-.header__top__right a {
-  text-decoration: none;
-  color: #fff;
-  font-size: 0.9rem;
-}
-
-.header__top__right a:hover {
-  color: #fff;
-}
-
-/* ============ header middle style =========== */
-
-.header__middle {
-  padding: 20px 0px;
-}
-
-.logo h1 a span {
-  font-size: 1.5rem;
-}
-
-.logo h1 a i {
-  font-size: 2.2rem;
-}
-
-.logo h1 a {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-
-.logo h1 {
-  line-height: 1.5rem;
-}
-
-.header__location span i {
-  font-size: 2.2rem;
-  color: black;
-}
-
-.header__location-content h4 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: black;
-}
-
-.header__location-content h6 {
-  font-weight: 600;
-}
-
-.header__btn {
-  background: black !important;
-  padding: 10px 20px;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-}
-
-.header__btn a {
-  display: flex;
-  align-items: center;
-  column-gap: 0.4rem;
-  text-decoration: none;
-  color: #fff;
-  justify-content: end;
-  font-size: 0.9rem;
-}
-
-.header__btn a:hover {
-  color: #fff;
-}
-
-/* ================ main navbar styles =========== */
-
+/* main navbar styles */
 .main__navbar {
-  padding: 15px 0px;
-  background: gray;
+  background-color: #333; /* Set your desired background color */
+  color: #fff; /* Set your desired text color */
 }
 
-.mobile__menu i {
-  color: #fff;
-  font-size: 1.3rem;
-  cursor: pointer;
+.navigation__wrapper {
+  padding: 15px 0;
 }
 
 .mobile__menu {
-  display: none;
+  /* Add styles for the mobile menu icon */
 }
 
 .menu {
   display: flex;
   align-items: center;
-  column-gap: 2.7rem;
 }
 
 .nav__item {
-  color: #fff;
   text-decoration: none;
-  transition: 0.3s;
+  color: #fff; /* Set your desired text color for navigation items */
+  margin-right: 20px; /* Set spacing between navigation items */
+  font-size: 16px; /* Set font size for navigation items */
+  transition: color 0.3s ease; /* Add a smooth transition effect for color changes */
 }
 
 .nav__item:hover {
-  color: #f9a826;
-}
-
-.search__box {
-  border: 1px solid gray;
-  padding: 7px 12px;
-  display: flex;
-  align-items: center;
-  border-radius: 50px;
-  background: white;
-}
-
-.search__box input {
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #fff;
-  cursor: pointer;
-}
-
-.search__box input::placeholder {
-  font-size: 0.8rem;
-}
-.search__box span i {
-  color: rgba(255, 255, 255, 0.555);
-  cursor: pointer;
+  color: #ffcc00; /* Set your desired hover color for navigation items */
 }
 
 .nav__active {
-  color: #f9a826;
+  font-weight: bold; /* Set a different style for the active navigation item */
 }
 
-@media only screen and (max-width: 768px) {
-  .header__top,
-  .header__middle,
-  .nav__right {
-    display: none;
-  }
+.nav__right {
+  /* Add styles for the right side of the navigation bar */
+}
 
-  .mobile__menu {
-    display: block;
-  }
+.search__box {
+  display: flex;
+  align-items: center;
+  background-color: #fff; /* Set background color for the search box */
+  border-radius: 5px; /* Add border-radius for a rounded appearance */
+  overflow: hidden;
+}
 
-  .navigation {
-    background: rgba(8, 8, 8, 0.9);
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    display: none;
-  }
+.search__box input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  width: 150px; /* Set the width of the search input */
+}
 
-  .menu {
-    width: 250px;
-    height: 100%;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 2rem;
-    justify-content: center;
-  }
-
-  .menu a {
-    color: gray;
-    font-weight: 600;
-    font-size: 0.9rem;
-  }
-
-  .menu__active {
-    display: block;
-  }
+.search__box span {
+  background-color: #333; /* Set background color for the search icon */
+  padding: 8px;
+  cursor: pointer;
 }

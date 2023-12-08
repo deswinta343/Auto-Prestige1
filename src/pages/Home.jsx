@@ -14,6 +14,8 @@ import Testimonial from "../components/UI/Testimonial";
 
 import BlogList from "../components/UI/BlogList";
 
+import withSplashScreen from "../components/splashscreen";
+
 const Home = () => {
   return (
     <Helmet title="Home">

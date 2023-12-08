@@ -21,6 +21,14 @@ const navLinks = [
     path: "/contact",
     display: "Contact",
   },
+  {
+    path: "/dataregister",
+  display: "Data Register",
+  },
+  // {
+  //   path: "/form",
+  // display: "FormPage",
+  // },
 ];
 
 const Header = () => {
@@ -49,7 +57,7 @@ const Header = () => {
                   <i class="ri-login-circle-line"></i> Login
                 </Link>
 
-                <Link to="#" className=" d-flex align-items-center gap-1">
+                <Link to="/register" className=" d-flex align-items-center gap-1">
                   <i class="ri-user-line"></i> Register
                 </Link>
               </div>

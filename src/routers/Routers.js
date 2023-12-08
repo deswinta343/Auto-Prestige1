@@ -8,11 +8,16 @@ import Blog from "../pages/Blog";
 import BlogDetails from "../pages/BlogDetails";
 import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
+import FormPage from "../components/Form";
+import Register from "../components/Register/Register";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DataRegister from "../components/Register/DataRegister";
 
 const Routers = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="/register" element={<Register />} />
       <Route path="/home" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/cars" element={<CarListing />} />
@@ -20,6 +25,9 @@ const Routers = () => {
       <Route path="/blogs" element={<Blog />} />
       <Route path="/blogs/:slug" element={<BlogDetails />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/form" element={<FormPage />} />
+      <Route path="/dataregister" element={<DataRegister />} />
+      {/* <Route exact path="/form" element={<FormPage />} /> */}
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

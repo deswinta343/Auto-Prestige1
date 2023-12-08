@@ -72,10 +72,7 @@ const Testimonial = () => {
 
       <div className="testimonial py-4 px-3">
         <p className="section__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus magni
-          explicabo molestias recusandae repudiandae, dolor, sapiente placeat
-          ab, animi eum minima nulla facere aliquam aut vitae quo pariatur
-          voluptate odit?
+        I have bought my dream car through this platform, it's really easy and fast. Could the area coverage be expanded further so that you can get a car with the number plate you want?
         </p>
 
         <div className="mt-3 d-flex align-items-center gap-4">
